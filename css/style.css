@@ -1,0 +1,77 @@
+header section h1 {
+  color: greenyellow;
+  text-align: center;
+  font-size: 70px;
+}
+
+section nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: blanchedalmond;
+  list-style: none;
+}
+
+@media screen and (max-width: 450px) {
+  section nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+section nav ul li a {
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  section nav ul li a {
+    font-size: 15px;
+    text-decoration: underline;
+  }
+}
+
+footer {
+  background-color: grey;
+}
+
+footer address a {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+footer h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+.fondo {
+  background-image: url("/Imagenes/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
