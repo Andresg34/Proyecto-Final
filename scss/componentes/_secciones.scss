@@ -1,0 +1,210 @@
+/** Secciones del index **/
+.indexs {
+    border: 1px solid;
+}
+
+.indexs p  {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: burlywood;
+    margin: 4%;
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+}
+
+.section-in {
+    background-color: white;
+}
+
+.section-in h3 {
+    font-family: Beau;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/** Secciones de noticias: **/
+.noticias-conteiner {
+    padding: 10px;
+    background-color: black;
+    margin: 20px;
+}
+
+#list-example h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: Beau;
+    font-size: 50px;
+    color: white;
+}
+
+#list-item-1, #list-item-2, #list-item-3, #list-item-4 {
+    margin: 10px 10px;
+    border-bottom: 1px dashed red;
+    color: white;
+}
+
+.lista p, .lista2 p, .lista3 p, .lista4 p {
+    margin: 20px; 
+    border: 1px solid red;
+    font-family: Serif-Bold;
+    color: white;
+}
+
+.lista p:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.lista2 p:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.lista3 p:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.lista4 p:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+/** Seccion de Conocenos **/
+.S-conocenos {
+    background-image: url("/Imagenes/familiadeporte.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 25%;
+    margin: 25px;
+    @media screen and (max-width: 1048px) {
+        background-image: none;
+        background-color: gray;
+
+    }
+
+}
+
+.S-conocenos h2 {
+    text-align: center;
+    font-family: Beau;
+    font-size: 40px;
+    text-decoration: underline;
+    color: burlywood;
+}
+
+.S-conocenos p {
+    font-family: Serif-Bold;
+    font-size: 15px;
+    color: black;
+    margin: 20px;
+}
+
+.S-conocenos h3 {
+    font-family: Beau;
+    font-size: 30px;
+    text-align: end;
+    color: black;
+}
+
+/** Secciones de Resultado: **/
+/** Se aplica grid a una seccion para que todos los resultados en Pantallas mas grandes que 450px queden las fotos una alado del otro **/
+
+.contenedor-padre {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+                    "argentino NBA Playoff";
+     @media screen and (max-width: 450px) {
+         display: block;
+         margin: 10px;
+         padding: 10px;
+     }
+}
+
+.contenedor-hijo1 {
+    grid-area: "argentino";
+    border: 5px solid black;
+   
+}
+
+.contenedor-hijo2 {
+    grid-area: "NBA";
+    border: 5px solid black;
+    
+}
+
+.contenedor-hijo3 {
+    grid-area: "PlayOff";
+    border: 5px solid black;
+}
+
+.contenedor-hijo1 h2, .contenedor-hijo2 h2, .contenedor-hijo3 h2 {
+    font-family: Beau;
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    margin-left: 10px;
+}
+
+
+
+#foto1 {
+    width: 100%;
+}
+
+/** Secciones de Contactos **/
+
+.speaker-form {
+    background-color: black;
+    border: 2px solid white;
+    padding: 50px;
+    margin: 10px;
+    @media screen and (max-width: 450px) {
+        background-color: red;
+        padding-bottom: 50px;
+        margin: 5px
+    }
+    
+}
+
+.speaker-form h2{
+    text-align: center;
+    font-family: Serif-Bold;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+    @media screen and (max-width: 360px) {
+        font-size: 25px;
+    }
+}
+
+.speaker-form p, .speaker-form h5 {
+    text-align: center;
+    font-family: Serif-Bold;
+    color: white;
+}
+
+
+.form-row, .legacy-form-row {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    padding: auto;
+}
+
+#enviar {
+    background-color: white;
+    padding: 15px 15px 15px;
+    margin: 10px 10px;
+    color: red;
+}
+
+#enviar:hover {
+    background-color: blue;
+    padding: 15px 15px 15px;
+    margin: 10px 10px;
+    color: green;
+}

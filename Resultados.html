@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Resultados Info-Sur</title>
 </head>
 <body>
@@ -41,26 +45,22 @@
 
         <!-- Aca crearia una seccion donde pondria una imagen o un carrusel de imagenes donde estarian todos los resultados de cada liga con las posiciones-->
 
-        <section>
-            <div>
+        <section class="contenedor-padre">
+            <div class="contenedor-hijo1">
                 <h2>Campeonato Argentino 2022:</h2>
-                <img src="imagenes/LigaArgentinaZonaA.png" alt="">
-                <img src="imagenes/LigaArgentinaZonaB.png" alt="">
+                <img id="foto1" src="imagenes/LigaArgentinaZonaA.png" alt="">
+                <img id="foto1" src="imagenes/LigaArgentinaZonaB.png" alt="">
             </div>
-        </section>
-
-        <section>
-            <div>
+        
+            <div class="contenedor-hijo2">
                 <h2>Posiciones de la NBA:</h2>
-                <img src="imagenes/Captura-68.png" alt="">
+                <img id="foto1" src="imagenes/Captura-68.png" alt="">
                 <!-- Foto con las posiciones de las ligas del mundo o campeonatos-->
             </div>
-        </section>
-
-        <section>
-            <div>
+      
+            <div class="contenedor-hijo3">
                 <h2>Play Off NBA:</h2>
-                <img src="imagenes/playoffnba.jpg" alt="">
+                <img id="foto1" src="imagenes/playoffnba.jpg" alt="">
             </div>
         </section>
 
@@ -79,7 +79,7 @@
             <h6>Copyright © - Diario del Sur</h6>
         </footer>
         <!-- Fin del footer -->
-    </div>
-    
+    <!-- JS de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

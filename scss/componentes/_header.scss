@@ -1,9 +1,13 @@
 header {
     section {
         h1 {
-            color: greenyellow;
+            color: burlywood;
             text-align: center;
             font-size: 70px;
+            font-family: Serif-Bold;
+            @media screen and (max-width: 450px) {
+                font-size: 30px;
+            }
         }
     }
 }
@@ -12,8 +16,8 @@ section {
     nav {
         ul {
             display: flex;
-            justify-content: space-between;
-            background-color: blanchedalmond;
+            justify-content: space-around;
+            background-color: black;
             list-style: none;
             @media screen and (max-width: 450px){
                 flex-direction: column;
@@ -21,12 +25,12 @@ section {
             }
             li {
                 a{
-                    color: black;
+                    color: burlywood;
                     font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
                     text-decoration: none;
                     @media screen and (max-width: 450px){
-                        font-size: 15px;
+                        font-size: 10px;
                         text-decoration: underline;
                     }
                 }

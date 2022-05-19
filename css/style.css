@@ -1,17 +1,23 @@
 header section h1 {
-  color: greenyellow;
+  color: burlywood;
   text-align: center;
   font-size: 70px;
+  font-family: Serif-Bold;
+}
+
+@media screen and (max-width: 450px) {
+  header section h1 {
+    font-size: 30px;
+  }
 }
 
 section nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: blanchedalmond;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: black;
   list-style: none;
 }
 
@@ -26,7 +32,7 @@ section nav ul {
 }
 
 section nav ul li a {
-  color: black;
+  color: burlywood;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -34,44 +40,302 @@ section nav ul li a {
 
 @media screen and (max-width: 450px) {
   section nav ul li a {
-    font-size: 15px;
+    font-size: 10px;
     text-decoration: underline;
   }
 }
 
 footer {
-  background-color: grey;
+  border: 1px double black;
 }
 
-footer address a {
-  color: white;
+@media screen and (max-width: 450px) {
+  footer {
+    background-color: black;
+    border: none;
+  }
+}
+
+footer address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer address a {
+  color: burlywood;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  footer address a {
+    font-size: 10px;
+  }
 }
 
 footer p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
-  color: white;
+  color: burlywood;
+  text-align: center;
 }
 
 footer h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
-  color: white;
+  color: burlywood;
+  text-align: center;
 }
 
-.fondo {
+body {
   background-image: url("/Imagenes/fondo1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/** Secciones del index **/
+.indexs {
+  border: 1px solid;
+}
+
+.indexs p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: burlywood;
+  margin: 4%;
+}
+
+@media screen and (max-width: 400px) {
+  .indexs p {
+    display: none;
+  }
+}
+
+.section-in {
+  background-color: white;
+}
+
+.section-in h3 {
+  font-family: Beau;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/** Secciones de noticias: **/
+.noticias-conteiner {
+  padding: 10px;
+  background-color: black;
+  margin: 20px;
+}
+
+#list-example h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Beau;
+  font-size: 50px;
+  color: white;
+}
+
+#list-item-1, #list-item-2, #list-item-3, #list-item-4 {
+  margin: 10px 10px;
+  border-bottom: 1px dashed red;
+  color: white;
+}
+
+.lista p, .lista2 p, .lista3 p, .lista4 p {
+  margin: 20px;
+  border: 1px solid red;
+  font-family: Serif-Bold;
+  color: white;
+}
+
+.lista p:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.lista2 p:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.lista3 p:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.lista4 p:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+/** Seccion de Conocenos **/
+.S-conocenos {
+  background-image: url("/Imagenes/familiadeporte.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 25%;
+  margin: 25px;
+}
+
+@media screen and (max-width: 1048px) {
+  .S-conocenos {
+    background-image: none;
+    background-color: gray;
+  }
+}
+
+.S-conocenos h2 {
+  text-align: center;
+  font-family: Beau;
+  font-size: 40px;
+  text-decoration: underline;
+  color: burlywood;
+}
+
+.S-conocenos p {
+  font-family: Serif-Bold;
+  font-size: 15px;
+  color: black;
+  margin: 20px;
+}
+
+.S-conocenos h3 {
+  font-family: Beau;
+  font-size: 30px;
+  text-align: end;
+  color: black;
+}
+
+/** Secciones de Resultado: **/
+/** Se aplica grid a una seccion para que todos los resultados en Pantallas mas grandes que 450px queden las fotos una alado del otro **/
+.contenedor-padre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "argentino NBA Playoff";
+}
+
+@media screen and (max-width: 450px) {
+  .contenedor-padre {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+.contenedor-hijo1 {
+  grid-area: "argentino";
+  border: 5px solid black;
+}
+
+.contenedor-hijo2 {
+  grid-area: "NBA";
+  border: 5px solid black;
+}
+
+.contenedor-hijo3 {
+  grid-area: "PlayOff";
+  border: 5px solid black;
+}
+
+.contenedor-hijo1 h2, .contenedor-hijo2 h2, .contenedor-hijo3 h2 {
+  font-family: Beau;
+  color: white;
+  font-size: 40px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+#foto1 {
+  width: 100%;
+}
+
+/** Secciones de Contactos **/
+.speaker-form {
+  background-color: black;
+  border: 2px solid white;
+  padding: 50px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .speaker-form {
+    background-color: red;
+    padding-bottom: 50px;
+    margin: 5px;
+  }
+}
+
+.speaker-form h2 {
+  text-align: center;
+  font-family: Serif-Bold;
+  font-style: italic;
+  font-size: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 360px) {
+  .speaker-form h2 {
+    font-size: 25px;
+  }
+}
+
+.speaker-form p, .speaker-form h5 {
+  text-align: center;
+  font-family: Serif-Bold;
+  color: white;
+}
+
+.form-row, .legacy-form-row {
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+  padding: auto;
+}
+
+#enviar {
+  background-color: white;
+  padding: 15px 15px 15px;
+  margin: 10px 10px;
+  color: red;
+}
+
+#enviar:hover {
+  background-color: blue;
+  padding: 15px 15px 15px;
+  margin: 10px 10px;
+  color: green;
+}
+
+@font-face {
+  font-family: Beau;
+  src: url("/Fuentes/BeauRivage-Regular.ttf");
+}
+
+@font-face {
+  font-family: Serif-Bold;
+  src: url("/Fuentes/PTSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: Serif-Italic;
+  src: url("/Fuentes/PTSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("/Fuentes/Roboto-Italic.ttf");
 }
 /*# sourceMappingURL=style.css.map */

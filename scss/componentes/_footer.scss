@@ -1,13 +1,22 @@
 footer {
-    background-color: grey;
+    border: 1px double black;
+    @media screen and (max-width: 450px) {
+        background-color: black;
+        border: none;
+    }
     address {
+        display: flex;
+            justify-content: space-around;
+
         a {
-            color: white;
-            display: flex;
-            flex-direction: row;
+            color: burlywood;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
+            font-size: 20px;
             text-decoration: none;
+            text-align: center;
+            @media screen and (max-width: 450px) {
+                font-size: 10px;
+            }
         }
     }
 }
@@ -16,7 +25,8 @@ footer {
     p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
-        color: white;
+        color: burlywood;
+        text-align: center;
     }
 }
 
@@ -24,6 +34,7 @@ footer {
     h6 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
-        color: white;
+        color: burlywood;
+        text-align: center;
     }
 }
