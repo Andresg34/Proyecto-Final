@@ -47,12 +47,18 @@ section nav ul li a {
 
 footer {
   border: 1px double black;
+  -webkit-animation: ChangeColor;
+          animation: ChangeColor;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
 @media screen and (max-width: 450px) {
   footer {
     background-color: black;
     border: none;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -90,6 +96,50 @@ footer h6 {
   font-size: 10px;
   color: burlywood;
   text-align: center;
+}
+
+@-webkit-keyframes ChangeColor {
+  0% {
+    background-color: transparent;
+    padding: 50px;
+  }
+  25% {
+    background-color: white;
+    padding: 40px;
+  }
+  50% {
+    padding: 20px;
+  }
+  75% {
+    background-color: gray;
+    padding: 10px;
+  }
+  100% {
+    background-color: black;
+    padding: 0px;
+  }
+}
+
+@keyframes ChangeColor {
+  0% {
+    background-color: transparent;
+    padding: 50px;
+  }
+  25% {
+    background-color: white;
+    padding: 40px;
+  }
+  50% {
+    padding: 20px;
+  }
+  75% {
+    background-color: gray;
+    padding: 10px;
+  }
+  100% {
+    background-color: black;
+    padding: 0px;
+  }
 }
 
 body {
@@ -284,12 +334,6 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 360px) {
-  .speaker-form h2 {
-    font-size: 25px;
-  }
-}
-
 .speaker-form p, .speaker-form h5 {
   text-align: center;
   font-family: Serif-Bold;
@@ -338,4 +382,6 @@ body {
   font-family: Roboto;
   src: url("/Fuentes/Roboto-Italic.ttf");
 }
+
+/** Mixins Movil **/
 /*# sourceMappingURL=style.css.map */
